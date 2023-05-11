@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+<form action="/convert">
+   <div>
+      Currency to convert from:
+      <input type="text" label="Currency to convert from" name="start" />
+   </div>
+   <div>
+      Currency to convert to:<input
+         type="text"
+         label="Currency to convert to"
+         name="end"
+      />
+   </div>
+   <div>Amount:<input type="text" label="Amount" name="amt" /></div>
+   <button>Submit</button>
+</form>
+{% endblock %}
